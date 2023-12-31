@@ -14,4 +14,23 @@ public class ArrayListTest {
         Assertions.assertThat(myArrayList).isEmpty();
 
     }
+
+    @Test
+    void should_lowercase_an_String_array_list() {
+        List<String> animalList = new ArrayList<>();
+        animalList.add("Zebra");
+        animalList.add("wOLf");
+        animalList.add("LioN");
+
+        LowerCase.smallLetter(animalList);
+
+        List<String> animalListLowerCase = new ArrayList<>();
+        animalListLowerCase.add("zebra");
+        animalListLowerCase.add("wolf");
+        animalListLowerCase.add("lion");
+
+        Assertions.assertThat(animalList).isEqualTo(animalListLowerCase);
+
+
+    }
 }
