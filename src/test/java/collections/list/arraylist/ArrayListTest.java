@@ -1,4 +1,4 @@
-package collections.list;
+package collections.list.arraylist;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -12,5 +12,6 @@ public class ArrayListTest {
         List<Integer> myArrayList = new ArrayList<>();
 
         Assertions.assertThat(myArrayList).isEmpty();
+
     }
 }
